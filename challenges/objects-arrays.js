@@ -188,3 +188,8 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
+// const universities = graduates.map(function(item){
+//   return item.university;
+// })
+// console.log(universities);
+
