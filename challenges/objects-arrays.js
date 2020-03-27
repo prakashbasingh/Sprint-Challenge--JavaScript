@@ -94,6 +94,9 @@ Once you have the new array created, log the result. */
 const universities = graduates.map(function(item){
   return item.university;
 })
+
+// const universities = graduates.map(item =>item.university);
+
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -107,6 +110,8 @@ for (let i = 0; i < graduates.length; i++){
   contactInfo.push(graduates[i].first-name +" "+graduates[i].email);
 };
 console.log(contactInfo);
+
+
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
@@ -144,6 +149,10 @@ const displayNames = [];
 zooAnimals.forEach(function(item) {
   displayNames.push(`name: ${item.animal_name}, Scientific: ${zooAnimals.scientific_name}`);
 });
+
+// zooAnimals.forEach(item => displayNames.push((`name: ${item.animal_name}, Scientific: ${zooAnimals.scientific_name}))
+
+
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -157,6 +166,8 @@ const lowCaseAnimalNames = zooAnimals.map(function(item){
   return item.animal_name.toLowerCase();
 });
 
+// const lowCaseAnimalNames = zooAnimals.map(item => item.animal_name.toLowerCase);
+
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -168,6 +179,8 @@ The zoos are concerned about animals with a lower population count. Using filter
 const lowPopulationAnimals = zooAnimals.filter(function(item){
   return item.population < 5;
 });
+
+const lowPopulationAnimals = zooAnimals.filter(item =>item.population < 5 );
 
 console.log(lowPopulationAnimals);
 
@@ -188,8 +201,4 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
-// const universities = graduates.map(function(item){
-//   return item.university;
-// })
-// console.log(universities);
 
