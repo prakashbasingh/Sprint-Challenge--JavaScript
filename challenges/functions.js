@@ -19,13 +19,20 @@ const add = function add (a, b) {
   return a + b;
 };
 
+// const add = (a, b) => { return (a + b);}
+
 const multiply = function multiply (a, b) {
   return a * b;
 };
 
+// const multiply = (a, b) => { return (a * b);}
+
+
 const greeting = function greeting (a, b) {
 return `Hello ${a} ${b}, nice to meet you!`;
 };
+
+// const greeting = (a, b) => {return `Hello ${a} ${b}, nice to meet you!`}
 
 console.log(consume(2, 2, add));
 console.log(consume(10, 16, multiply));
